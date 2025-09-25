@@ -1,5 +1,5 @@
 <?php
-// Une page d’accueil qui présente votre site
+// Une page d’accueil qui présente votre site salut 
 ?>
 <?php include "structure/header.php"; ?>
 <body>
