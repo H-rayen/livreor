@@ -5,7 +5,7 @@
 <?php include "structure/header.php"; ?>
 <body>
     <?php include "structure/menu.php"; ?>
-    <h1>inscription</h1>
+    <h1>inscription d'Adrien</h1>
 
     <form method="post" action ="model/traitement-inscription.php">
 
