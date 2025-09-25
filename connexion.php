@@ -1,5 +1,5 @@
 <?php
-// Une page contenant un formulaire de connexion
+// Une page contenant un formulaire de connexion salut a tous 
 
 ?>
 
