@@ -1,0 +1,22 @@
+.inscription_container{
+ display: flex;
+ justify-content: center;
+ 
+}
+
+
+
+.inscription{
+
+ display : flex ;
+ flex-direction: column;
+ gap: 10px;
+ width: 40% ;
+
+
+}
+
+h1{
+    text-align: center;
+    margin-bottom :50px ;
+}
