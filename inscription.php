@@ -17,7 +17,7 @@
 
         <form class="inscription" method="post" action ="model/traitement-inscription.php">
 
-        <input class="placeholder" type="text" name="nom_d'utilisateur" placeholder="Entrer un nom d'utilisateur">
+        <input class="placeholder" type="text" name="login" placeholder="Entrer un nom d'utilisateur">
         <input class="placeholder" type="password" name="password" placeholder="Créer le mot de passe" required="">
         <input class="placeholder" type="password" name="confirm_password" placeholder="Confirmer le mot de passe" required="">
         <input class="inscrire" type="submit" value="s'inscrire">
