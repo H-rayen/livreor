@@ -14,9 +14,9 @@
     <form class="connexion" method="post" action ="model/traitement-connexion.php">
         <h1>Connexion</h1>
         <p class="text">Nom d'utilisateur</p>
-        <input name="login" type="text" placeholder="Nom d'utilisateur">
+        <input class="util" name="login" type="text" placeholder="Nom d'utilisateur">
         <p class="text">Mot de passe</p>
-        <input name="password" type="password" placeholder="Mot de passe">
+        <input class= 'util' name="password" type="password" placeholder="Mot de passe">
         <input class="btn_connexion" name ="bouton" type="submit" value="Envoyer"> 
 
     </form>
