@@ -1,13 +1,15 @@
 <?php
 // Une page permettant de voir le livre d’or 
 ?>
+<?php include "structure/header.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="livre-or.css" >
+    <link rel="stylesheet" href="./css/livre-or.css" >
 </head>
 <body>
+  <?php include "structure/menu.php"; ?>
 <h1> LIVRE D'OR </h1>
 <section>
  <table border="9">
@@ -17,7 +19,7 @@
             <th>Commentaire </th>
         </tr>
         <tr>
-            <td></td>
+            <td><?php               ?></td>
             <td></td>
             <td></td>
         </tr>
