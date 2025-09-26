@@ -8,11 +8,13 @@
 <link rel="stylesheet" href="style_inscription.css">
 
 </head>
-<body>
-    <?php include "structure/menu.php"; ?>
 
-    <h1>PAGE D'INSCRIPTION</h1>
+<body>
+        <?php include "structure/menu.php"; ?>
+    
     <div class="inscription_container">
+                <h1>PAGE D'INSCRIPTION</h1>
+
         <form class="inscription" method="post" action ="model/traitement-inscription.php">
 
         <input class="placeholder" type="text" name="nom_d'utilisateur" placeholder="Entrer un nom d'utilisateur">
