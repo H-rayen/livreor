@@ -7,6 +7,7 @@ $id_session = 2;
 $query="SELECT utilisateurs 
 login = '$login', password = '$password' 
 WHERE id = '$id_session'";
-?>
 
- 
+
+
+?> 

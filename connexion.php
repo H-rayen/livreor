@@ -3,7 +3,7 @@
 
 ?>
 <head>
-    <link rel= "stylesheet" href="style_connexion.css">
+    <link rel= "stylesheet" href="./css/style_connexion.css">
 
 </head>
 <?php include "structure/header.php"; ?>
