@@ -1,3 +1,7 @@
+<?php
+session_start();
+include "./core/tools.php";
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

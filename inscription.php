@@ -5,13 +5,13 @@
 
 <?php include "structure/header.php"; ?>
 <head>
-<link rel="stylesheet" href="style_inscription.css">
+<link rel="stylesheet" href="./css/style_inscription.css">
 
 </head>
 
 <body>
-        <?php include "structure/menu.php"; ?>
-    
+  <?php include "structure/menu.php"; ?>
+
     <div class="inscription_container">
                 <h1>PAGE D'INSCRIPTION</h1>
 
