@@ -3,6 +3,7 @@ session_start();
 include '../core/bdd.php';
 include '../core/tools.php';
 
+
 $stmt = $pdo->prepare("SELECT* FROM utilisateurs WHERE login =?");
 
 
@@ -36,3 +37,9 @@ if (!empty($_POST)) {
 // } 
 // si non {on renvoie dans un formulaire avec un message d'erreur optionel  
 //     }
+
+
+
+
+?> 
+

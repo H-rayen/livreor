@@ -1,5 +1,5 @@
 <?php 
-include '../core/bdd.php';
+include './core/bdd.php';
 
 $query = "SELECT * FROM commentaires INNER JOIN utilisateurs ON commentaires.id_utilisateur = utilisateurs.id"; 
 
@@ -7,7 +7,15 @@ $query = "SELECT * FROM commentaires INNER JOIN utilisateurs ON commentaires.id_
 $pdostatement= $pdo->query($query);
 $res = $pdostatement->fetchAll(PDO::FETCH_ASSOC);
 
-var_dump($res);
+function verif (){
+if(empty($_POST) === false){
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+
+}
+ }
 
 ?> 
 
