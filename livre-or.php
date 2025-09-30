@@ -1,5 +1,4 @@
 <?php include "structure/header.php"; 
-include_once "core/tools.php";
 include "model/model_livreor.php";
 
 $date = new DateTime('2025-09-29');
@@ -11,7 +10,6 @@ $formatter = new IntlDateFormatter(
     IntlDateFormatter::GREGORIAN,
     'EEEE dd/MM'
 );
-var_dump(recup_info());
 
 ?>
     <link rel="stylesheet" href="./css/livre-or.css" >
