@@ -1,4 +1,7 @@
 <?php include "structure/header.php"; 
+include_once "core/tools.php";
+include "model/model_livreor.php";
+
 $date = new DateTime('2025-09-29');
 $formatter = new IntlDateFormatter(
     'fr_FR',
@@ -8,7 +11,7 @@ $formatter = new IntlDateFormatter(
     IntlDateFormatter::GREGORIAN,
     'EEEE dd/MM'
 );
-
+var_dump(recup_info());
 
 ?>
     <link rel="stylesheet" href="./css/livre-or.css" >
@@ -24,10 +27,10 @@ $formatter = new IntlDateFormatter(
             </tr>
             <tr>
                 <td><input type="text" value = "<?php  echo $formatter->format($date);?>"disabled></td>
-                <td><input name = "login" type="text"value = "<?php echo "Santiago" ?>"disabled></td>
+                <td><input name = "login" type="text"value = "<?php ?>"disabled></td>
                 <td>
                     <textarea id="textarea" name="commentaire" rows="15" cols="20"></textarea>
-                    <input type="submit" value="Envoie commentaire ">
+                    <input  name = "bouton" type="submit" value="Envoie commentaire ">
                 </td>
             </tr>
             <tr>
