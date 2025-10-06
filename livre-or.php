@@ -1,7 +1,6 @@
 <?php
 include "structure/header.php";        
 include "model/model_livreor.php";     
-
 // Traiter le formulaire uniquement si l'utilisateur est connecté
 if ($_SERVER['REQUEST_METHOD'] === 'POST' 
     && isset($_SESSION['id']) 
@@ -34,9 +33,9 @@ $formatter = new IntlDateFormatter(
 <h1>LIVRE D'OR</h1>
 
 <section>
-
     <!-- Formulaire visible uniquement pour les utilisateurs connectés -->
-    <?php if ( isset($_SESSION['login'])): ?>
+    <?php if ( isset($_SESSION['login'])):
+        ?>
     <form method="POST">
         <table border="1" cellpadding="5">
             <tr>
@@ -68,11 +67,12 @@ $formatter = new IntlDateFormatter(
             <th>Utilisateur</th>
             <th>Commentaire</th>
         </tr>
-        <?php foreach ($recup as $row): ?>
+        <?php 
+        foreach ($recup as $row): ?>
         <tr>
             <td><?php echo htmlspecialchars($row['date']); ?></td>
             <td><?php echo htmlspecialchars($row['login']); ?></td>
-            <td style="white-space: pre-wrap;"><?php echo nl2br(htmlspecialchars($row['commentaire'])); ?></td>
+            <td style="white-space: pre-wrap;"><?php echo (htmlspecialchars($row['commentaire'])); ?></td>
         </tr>
         <?php endforeach; ?>
     </table>

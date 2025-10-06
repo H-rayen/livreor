@@ -19,10 +19,11 @@ if (!empty($_POST)) {
         $response = $stmt->execute([$login]);
 
         $res = $stmt->fetch(PDO::FETCH_ASSOC);
-       
+     
     }
 
     if ($res['password'] == $_POST['password']) {
+        $_SESSION['id'] = $res['id'];
         $_SESSION['login'] = $res['login'];
         header("Location:../connexion.php");
         exit;
